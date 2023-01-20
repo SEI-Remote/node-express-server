@@ -1,6 +1,6 @@
 // Module dependencies.
-const { app } = require('../server.js')
-const http = require('http')
+import { app } from '../server.js'
+import http from 'http'
 
 // Get port from environment and store in Express.
 const port = normalizePort(process.env.PORT || '3000')

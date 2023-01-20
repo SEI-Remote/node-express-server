@@ -1,7 +1,7 @@
 // import npm packages
-const express = require('express')
-const logger = require('morgan')
-const cors = require("cors")
+import express from 'express'
+import logger from 'morgan'
+import cors from 'cors'
 
 // import routers
 const indexRouter = require('./routes/index.js')
@@ -27,4 +27,4 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500).json({ err: err.message })
 })
 
-module.exports = { app }
+export { app }
