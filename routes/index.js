@@ -1,12 +1,10 @@
-import { Router } from 'express'
+const { Router } = require('express')
 
 const router = Router()
 
 // GET localhost:3000/
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' })
+  res.status(200).json({ msg: 'hello, friend' })
 })
 
-export { 
-  router
-}
+module.exports = router
