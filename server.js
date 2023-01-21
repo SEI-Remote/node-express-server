@@ -4,7 +4,7 @@ import logger from 'morgan'
 import cors from 'cors'
 
 // import routers
-const indexRouter = require('./routes/index.js')
+import { router as indexRouter } from './routes/index.js'
 
 // create the express app
 const app = express()
